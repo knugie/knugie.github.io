@@ -1,0 +1,42 @@
+# Site settings
+title: 'knugie'
+description: value - passion - innovation
+url: 'https://knugie.github.io'
+baseurl: ''
+google_analytics: 'UA-123642678-1'
+
+author:
+  name: 'Wolfgang Teuber'
+  email: knugie@gmx.net
+  twitter_username: knugie
+  facebook_username: knugie
+  github_username:  knugie
+  linkedin_username: wolfgang-teuber
+
+defaults:
+  -
+    scope:
+      path: ''
+      type: 'posts'
+    values:
+        layout: 'post'
+
+# Build settings
+destination: _site
+paginate: 10
+permalink: /:year/:title/
+markdown: kramdown
+highlighter: rouge
+
+sass:
+    sass_dir: _sass
+    style: compressed
+
+kramdown:
+  # use Github Flavored Markdown
+  input: GFM
+  # do not replace newlines by <br>s
+  hard_wrap: false
+
+plugins: ['jekyll-paginate']
+exclude: ['README.md', 'Gemfile', 'Gemfile.lock']
