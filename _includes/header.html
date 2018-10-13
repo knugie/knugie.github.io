@@ -77,6 +77,16 @@
               </li>
             {% endif %}
 
+            {% if site.author.stack_overflow_user_id %}
+              <!-- GitHub Alt -->
+              <li class="navigation__item">
+                <a href="https://stackoverflow.com/users/{{ site.author.stack_overflow_user_id }}" title="{{ site.author.stack_overflow_user_id }} on Stack Overflow" target="_blank">
+                  <i class="icon icon-social-stack-overflow"></i>
+                  <span class="label">GitHub2</span>
+                </a>
+              </li>
+            {% endif %}
+
             {% if site.author.email %}
               <!-- Email -->
               <li class="navigation__item">
