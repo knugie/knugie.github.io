@@ -67,6 +67,16 @@
               </li>
             {% endif %}
 
+            {% if site.author.alt_github_username %}
+              <!-- GitHub Alt -->
+              <li class="navigation__item">
+                <a href="https://www.github.com/{{ site.author.alt_github_username }}" title="{{ site.author.alt_github_username }} on GitHub" target="_blank">
+                  <i class="icon icon-social-github"></i>
+                  <span class="label">GitHub2</span>
+                </a>
+              </li>
+            {% endif %}
+
             {% if site.author.email %}
               <!-- Email -->
               <li class="navigation__item">
