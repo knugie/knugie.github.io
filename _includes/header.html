@@ -57,6 +57,26 @@
               </li>
             {% endif %}
 
+            {% if site.author.gitlab_username %}
+              <!-- GitLab -->
+              <li class="navigation__item">
+                <a href="https://www.gitlab.com/{{ site.author.gitlab_username }}" title="{{ site.author.gitlab_username }} on GitLab" target="_blank">
+                  <i class="icon icon-cloud"></i>
+                  <span class="label">GitHub</span>
+                </a>
+              </li>
+            {% endif %}
+
+            {% if site.author.gitlab_alt_username %}
+              <!-- GitLab Alt -->
+              <li class="navigation__item">
+                <a href="https://www.gitlab.com/{{ site.author.gitlab_alt_username }}" title="{{ site.author.gitlab_alt_username }} on GitLab" target="_blank">
+                  <i class="icon icon-cloud"></i>
+                  <span class="label">GitLab2</span>
+                </a>
+              </li>
+            {% endif %}
+
             {% if site.author.github_username %}
               <!-- GitHub -->
               <li class="navigation__item">
@@ -67,10 +87,10 @@
               </li>
             {% endif %}
 
-            {% if site.author.alt_github_username %}
+            {% if site.author.github_alt_username %}
               <!-- GitHub Alt -->
               <li class="navigation__item">
-                <a href="https://www.github.com/{{ site.author.alt_github_username }}" title="{{ site.author.alt_github_username }} on GitHub" target="_blank">
+                <a href="https://www.github.com/{{ site.author.github_alt_username }}" title="{{ site.author.github_alt_username }} on GitHub" target="_blank">
                   <i class="icon icon-social-github"></i>
                   <span class="label">GitHub2</span>
                 </a>
